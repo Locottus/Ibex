@@ -17,6 +17,7 @@ export class ConstruccionComponent implements OnInit {
 
   nombre = '';
   fromEmail = '';
+  telefono = '';
   toEmail = 'herlich@gmail.com';
   msg = '';
   subject = 'Mensaje de Pagina Web';
@@ -27,6 +28,7 @@ export class ConstruccionComponent implements OnInit {
           "from": "noreplay@ibexcm.com",
           "msg": 'nombre de quien envia el mensaje: ' + this.nombre +
            ' email de quien envia el mensaje: ' + this.fromEmail +
+           ' telefono de quien envia el mensaje: ' + this.telefono +
            ' mensaje: ' + this.msg,
           "to": this.toEmail,
           "subject": "Mensaje desde pagina web"
@@ -45,13 +47,14 @@ export class ConstruccionComponent implements OnInit {
     }
 
   enviarForma() {
-    console.log(this.nombre + ' ' + this.fromEmail + ' ' + this.msg + ' ' + this.subject);
-    if (this.msg.length > 0 && this.fromEmail.length > 0 && this.nombre.length > 0){
+    console.log(this.nombre + ' ' + this.fromEmail + ' ' + this.msg + ' ' + this.subject + ' '+ this.telefono);
+    if (this.msg.length > 0 && this.fromEmail.length > 0 && this.nombre.length > 0 && this.telefono.length > 0){
       this.httpPostFunction();
       alert('El mensaje ha sido enviado.');
       this.msg = '';
       this.fromEmail = '';
       this.nombre = '';
+      this.telefono = '';
     } else {
       alert('Por favor llene los campos.');
     }
