@@ -24,31 +24,31 @@ export class ConstruccionComponent implements OnInit {
 
   httpPostFunction() {
     this.http.post("http://18.218.67.86:4000/api/sendMail",
-        {
-          "from": "noreplay@ibexcm.com",
-          "msg": 'nombre de quien envia el mensaje: ' + this.nombre +
-           ' email de quien envia el mensaje: ' + this.fromEmail +
-           ' telefono de quien envia el mensaje: ' + this.telefono +
-           ' mensaje: ' + this.msg,
-          "to": this.toEmail,
-          "subject": "Mensaje desde pagina web"
-        })
-        .subscribe(
-            (val) => {
-                console.log("POST call successful value returned in body", 
-                            val);
-            },
-            response => {
-                console.log("POST call in error", response);
-            },
-            () => {
-                console.log("The POST observable is now completed.");
-            });
-    }
+      {
+        "from": "noreplay@ibexcm.com",
+        "msg": 'nombre de quien envia el mensaje: ' + this.nombre +
+          ' email de quien envia el mensaje: ' + this.fromEmail +
+          ' telefono de quien envia el mensaje: ' + this.telefono +
+          ' mensaje: ' + this.msg,
+        "to": this.toEmail,
+        "subject": "Mensaje desde pagina web"
+      })
+      .subscribe(
+        (val) => {
+          console.log("POST call successful value returned in body",
+            val);
+        },
+        response => {
+          console.log("POST call in error", response);
+        },
+        () => {
+          console.log("The POST observable is now completed.");
+        });
+  }
 
   enviarForma() {
-    console.log(this.nombre + ' ' + this.fromEmail + ' ' + this.msg + ' ' + this.subject + ' '+ this.telefono);
-    if (this.msg.length > 0 && this.fromEmail.length > 0 && this.nombre.length > 0 && this.telefono.length > 0){
+    console.log(this.nombre + ' ' + this.fromEmail + ' ' + this.msg + ' ' + this.subject + ' ' + this.telefono);
+    if (this.msg.length > 0 && this.fromEmail.length > 0 && this.nombre.length > 0 && this.telefono.length > 0) {
       this.httpPostFunction();
       alert('El mensaje ha sido enviado.');
       this.msg = '';
@@ -59,6 +59,5 @@ export class ConstruccionComponent implements OnInit {
       alert('Por favor llene los campos.');
     }
   }
-
 
 }
