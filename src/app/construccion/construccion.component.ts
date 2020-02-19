@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./construccion.component.css']
 })
 export class ConstruccionComponent implements OnInit {
-
+ //MAILAPI = 'http://18.218.67.86:4000/api/sendMail';
+ MAILAPI = 'http://localhost:4000/api/sendMail';//dev parameter
 
   constructor(private http: HttpClient) { }
 
@@ -18,12 +19,13 @@ export class ConstruccionComponent implements OnInit {
   nombre = '';
   fromEmail = '';
   telefono = '';
-  toEmail = 'herlich@gmail.com';
+  toEmail = 'herlich@gmail.com';//dev parameter
+  //toEmail = 'j@lemusl.com';
   msg = '';
   subject = 'Mensaje de Pagina Web';
 
   httpPostFunction() {
-    this.http.post("http://18.218.67.86:4000/api/sendMail",
+    this.http.post(this.MAILAPI,
       {
         "from": "noreplay@ibexcm.com",
         "msg": 'nombre de quien envia el mensaje: ' + this.nombre +
