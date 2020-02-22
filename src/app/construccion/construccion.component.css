@@ -1,3 +1,17 @@
+
+.IbexGreen{
+  background-color: #044900;
+  color: white;
+}
+.IbexBlack{
+  background-color: #231f20;
+  color:white;  
+}
+.IbexGray{
+  background-color: #bdc2bf;
+  color:black;
+}
+
 html{
     height:100%
   }
@@ -13,10 +27,10 @@ html{
     display : flex;
     justify-content : center;
     align-items : center;
-    background-color:#0f0e0e;
+    /* background-color:#0f0e0e; */
     height : 100%;
     color : #FFF;
-  
+    background: rgba(7, 7, 7, 0.8);
   }
   .right{
       
