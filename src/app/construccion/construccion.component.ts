@@ -20,9 +20,8 @@ export class ConstruccionComponent implements OnInit {
   fromEmail = '';
   telefono = '';
   toEmail = 'herlich@gmail.com';//dev parameter
-  //toEmail = 'j@lemusl.com';
   msg = '';
-  subject = 'Mensaje de Pagina Web';
+  subject = 'Mensaje de Pagina Web Ibex Construccion';
 
   httpPostFunction() {
     this.http.post(this.MAILAPI,
