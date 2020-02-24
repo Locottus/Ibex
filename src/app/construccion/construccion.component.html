@@ -77,8 +77,10 @@
 
                     <div class="username">
                         <i class=" fa  fa-comment fa-fw " id="icon"></i>
-                        <input type="text" name="mensaje" class="inp" placeholder="Mensaje" required name="mensaje" placeholder="Mensaje"
-                        [(ngModel)]="msg">
+                        <!-- <input type="text" name="mensaje" class="inp" placeholder="Mensaje" required name="mensaje" placeholder="Mensaje"
+                        [(ngModel)]="msg"> -->
+                        <textarea id="msg" name="mensaje" class="inp" placeholder="Mensaje" required name="mensaje" placeholder="Mensaje"
+                        [(ngModel)]="msg"rows="10" cols="10"></textarea>
                     </div>
 
 
