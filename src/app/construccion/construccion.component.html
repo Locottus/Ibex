@@ -20,28 +20,32 @@
         </div>
 
         <div class="divopaco col-lg-6 col-sm-12 right">
-            <br><br>
-            <h1>Venta de Mostrador</h1>
-            <h4>Servicio personalizado confiable y seguro.</h4>
+            <div class="center-block text-center">
+                <h1>Venta de Mostrador</h1>
+                <h4>Servicio personalizado confiable y seguro.</h4>
+            </div>
             <hr>
-            <div class="input-group ">
+
+            <!-- <div class="input-group col-lg-6 ">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                 <input id="nombre" type="text" class="md-textarea form-control" name="nombre" placeholder="Nombre"
                     [(ngModel)]="nombre">
             </div>
-            <div class="input-group">
+            <div class="input-group col-lg-6">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                 <input id="email" type="text" class="md-textarea form-control" name="email" placeholder="Email"
                     [(ngModel)]="fromEmail">
             </div>
 
-            <div class="input-group">
+            
+
+            <div class="input-group col-lg-6">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
                 <input id="telefono" type="text" class="md-textarea form-control" name="telefono" placeholder="Telefono"
                     [(ngModel)]="telefono">
             </div>
 
-            <div class="input-group">
+            <div class="input-group col-lg-6">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
                 <input id="message" type="text" ti class="md-textarea form-control" name="message" placeholder="Mensaje"
                     mdbInput [(ngModel)]="msg">
@@ -49,8 +53,45 @@
             <hr>
             <button class="btn  IbexGreen btn-lg text-center center-block" (click)="enviarForma()"> Enviar Mensaje
             </button>
-            <hr><br>
-            <div>
+            <hr><br> -->
+
+
+            <div class="main">
+                <form action="#" method="post" id="form-box">
+                    <div class="username">
+                        <i class="fa fa-user fa-fw" id="icon"></i>
+                        <input type="text" name="nombre" class="inp" placeholder="Nombre" required autofocus [(ngModel)]="nombre">
+                    </div>
+                    
+                    <div class="username">
+                        <i class="fa  glyphicon-envelope fa-fw" id="icon"></i>
+                        <input type="text" name="email" class="inp" placeholder="Email" required name="email" placeholder="Email"
+                        [(ngModel)]="fromEmail">
+                    </div>
+
+                    <div class="username">
+                        <i class=" fa  fa-phone fa-fw " id="icon"></i>
+                        <input type="text" name="telefono" class="inp" placeholder="Telefono" required name="telefono" placeholder="Telefono"
+                        [(ngModel)]="telefono">
+                    </div>
+
+                    <div class="username">
+                        <i class=" fa  fa-comment fa-fw " id="icon"></i>
+                        <input type="text" name="mensaje" class="inp" placeholder="Mensaje" required name="mensaje" placeholder="Mensaje"
+                        [(ngModel)]="msg">
+                    </div>
+
+
+                    <div class="clear"></div>
+                    <!-- <input type="submit" name="submit" value="SIGN IN" id="sub-btn"> -->
+                    <button class="btn  IbexGreen btn-lg text-center center-block" (click)="enviarForma()"> Enviar Mensaje
+                    </button>
+        
+                
+                </form>
+            </div>
+        
+            <div class = "center-block text-center">
                 <a href="https://www.facebook.com/MercadoIbex/" target="_blank"
                     class="fa fa-facebook fa-2x "></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://twitter.com/MercadoIbex" class="fa fa-twitter fa-2x "
