@@ -24,6 +24,10 @@ html{
   .intro{
     height:auto;
   }
+
+  .padText{
+    padding : 70px;
+  }
   
   .left{
     float:left;
