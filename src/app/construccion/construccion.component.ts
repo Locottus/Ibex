@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./construccion.component.css']
 })
 export class ConstruccionComponent implements OnInit {
-  MAILAPI = 'http://18.218.67.86:4000/api/sendMail';
-  //MAILAPI = 'http://localhost:4000/api/sendMail';//dev parameter
+  //MAILAPI = 'http://18.218.67.86:4000/api/sendMail';
+  MAILAPI = 'http://localhost:3000/mensaje';//dev parameter
 
   constructor(private http: HttpClient) { }
 
@@ -17,22 +17,17 @@ export class ConstruccionComponent implements OnInit {
   }
 
   nombre = '';
-  fromEmail = '';
   telefono = '';
-  toEmail = 'herlich@gmail.com';//dev parameter
+  email = '';//dev parameter
   msg = '';
-  subject = 'Mensaje de Pagina Web Ibex Construccion';
 
   httpPostFunction() {
     this.http.post(this.MAILAPI,
       {
-        "from": "noreplay@ibexcm.com",
-        "msg": 'nombre de quien envia el mensaje: ' + this.nombre +
-          ' email de quien envia el mensaje: ' + this.fromEmail +
-          ' telefono de quien envia el mensaje: ' + this.telefono +
-          ' mensaje: ' + this.msg,
-        "to": this.toEmail,
-        "subject": "Mensaje desde pagina web"
+        "nombre": this.nombre,
+        "telefono": this.telefono,
+        "msg":  this.msg,
+        "email": this.email
       })
       .subscribe(
         (val) => {
@@ -48,12 +43,12 @@ export class ConstruccionComponent implements OnInit {
   }
 
   enviarForma() {
-    console.log(this.nombre + ' ' + this.fromEmail + ' ' + this.msg + ' ' + this.subject + ' ' + this.telefono);
-    if (this.msg.length > 0 && this.fromEmail.length > 0 && this.nombre.length > 0 && this.telefono.length > 0) {
+    console.log(this.nombre + ' ' + this.email + ' ' + this.msg + ' ' + this.telefono);
+    if (this.msg.length > 0 && this.email.length > 0 && this.nombre.length > 0 && this.telefono.length > 0) {
       this.httpPostFunction();
-      alert('El mensaje ha sido enviado.');
+      alert('El mensaje ha sido enviado, gracias por utilizar nuestro servicio. ');
       this.msg = '';
-      this.fromEmail = '';
+      this.email = '';
       this.nombre = '';
       this.telefono = '';
     } else {
