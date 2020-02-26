@@ -1,71 +1,73 @@
-
-.IbexGreen{
-  background-color: #044900;
-  color: white;
-}
-.IbexBlack{
-  background-color: #231f20;
-  color:white;  
-}
-.IbexGray{
-  background-color: #bdc2bf;
-  color:black;
+.IbexGreen {
+    background-color: #044900;
+    color: white;
 }
 
-html{
-    height:auto;
-    margin:10px;
-  }
-  
-  body{
-    height:auto;
-    margin:10px;
-  }
-  .intro{
-    height:auto;
-  }
+.IbexBlack {
+    background-color: #231f20;
+    color: white;
+}
 
-  .padText{
-    padding : 70px;
-  }
-  
-  .left{
-    float:left;
+.IbexGray {
+    background-color: #bdc2bf;
+    color: black;
+}
+
+html {
+    height: auto;
+    margin: 10px;
+}
+
+body {
+    height: auto;
+    margin: 10px;
+}
+
+.intro {
+    height: auto;
+}
+
+.padText {
+    padding: 70px;
+}
+
+.left {
+    float: left;
     width: 50%;
-        
     font-size: 20px;
-    display : flex;
-    color : #FFF;
+    display: flex;
+    color: #FFF;
     background: rgba(7, 7, 7, 0.8);
-  }
-  .right{
-    float:left;
+}
+
+.right {
+    float: left;
     width: 50%;
-        
     /* display : flex; */
-    background-color:#FFF;
-    color : #3d231b;
-  }
+    background-color: #FFF;
+    color: #3d231b;
+}
 
-  
-
-  .main{
+.main {
     width: 400px;
     background: #fff;
     margin: 50px auto;
     box-shadow: 0 2px 5px #222;
-  }
-  header{
+}
+
+header {
     padding: 10px;
     background: #ff5722;
     color: #fff;
     text-align: center;
-  }
-  #lock-outline{
+}
+
+#lock-outline {
     font-size: 75px;
     padding: 5px;
-  }
-  header:before{
+}
+
+header:before {
     content: "";
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -73,11 +75,13 @@ html{
     position: absolute;
     top: 175px;
     left: 660px;
-  }
-  #form-box{
+}
+
+#form-box {
     padding: 25px 25px 10px 25px;
-  }
-  #icon{
+}
+
+#icon {
     width: 50px;
     height: 45px;
     background: gray;
@@ -85,33 +89,34 @@ html{
     line-height: 1.7;
     margin-bottom: 5px;
     font-size: 25px;
-  }
+}
 
-  .inpTxtArea{
+.inpTxtArea {
     width: 100%;
-     /* height: 45px;  */
+    /* height: 45px; */
     padding: 0 15px 0 15px;
     border: none;
-    background: #cfd8dc;
+    background: #ebeff1;
     font-size: 18px;
     color: #555;
-  }
+}
 
-  .inp{
+.inp {
     width: 100%;
-    height: 45px; 
+    height: 45px;
     padding: 0 15px 0 15px;
     border: none;
-    background: #cfd8dc;
+    background: #ebeff1;
     font-size: 18px;
     color: #555;
-  }
+}
 
-
-  .inp:focus{
+.inp:focus {
     outline: none;
-  }
-  .username,.password{
+}
+
+.username,
+.password {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -119,25 +124,30 @@ html{
     display: flex;
     margin-bottom: 10px;
     position: relative;
-  }
-  #rem{
+}
+
+#rem {
     width: 20px;
     height: 20px;
     float: left;
-  }
-  #rem-text{
+}
+
+#rem-text {
     float: left;
     margin-left: 5px;
     /* color: #444; */
-  }
-  #forgot{
+}
+
+#forgot {
     float: right;
     /* color: #444; */
-  }
-  .clear{
+}
+
+.clear {
     clear: both;
-  }
-  #sub-btn{
+}
+
+#sub-btn {
     width: 100%;
     margin-top: 15px;
     padding: 10px;
@@ -147,19 +157,19 @@ html{
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-  }
-  /* #sub-btn:focus{
-    outline: none;
-  }
-  #sub-btn:hover{
-    background-color: #dd2c00;
-  } */
-  p{
+}
+
+
+/* #sub-btn:focus { outline: none; } 
+ #sub-btn:hover { background-color: #dd2c00; } */
+
+p {
     text-align: justify;
     padding: 10px;
     /* color: #444; */
-  }
-  .reg-box{
+}
+
+.reg-box {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -169,27 +179,33 @@ html{
     width: 70%;
     margin: 0 auto;
     justify-content: space-around;
-  }
-  .s-icon{
+}
+
+.s-icon {
     width: 50px;
     height: 50px;
     font-size: 30px;
     color: #fff;
     line-height: 1.7;
     cursor: pointer;
-  }
-  .s-icon:hover{
+}
+
+.s-icon:hover {
     opacity: 0.9;
-  }
-  .fb{
+}
+
+.fb {
     background-color: #3b5998;
-  }
-  .tweet{
+}
+
+.tweet {
     background-color: #55acee;
-  }
-  .gplus{
+}
+
+.gplus {
     background-color: #dd4b39;
-  }
-  a{
+}
+
+a {
     color: #444;
-  }
+}

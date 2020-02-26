@@ -8,8 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./construccion.component.css']
 })
 export class ConstruccionComponent implements OnInit {
-  MAILAPI = 'http://18.218.67.86:4000/mensaje';
-  //MAILAPI = 'http://localhost:3000/mensaje';//dev parameter
+  MAILAPI = 'http://18.218.67.86:3000/mensaje';
 
   constructor(private http: HttpClient) { }
 
@@ -26,7 +25,7 @@ export class ConstruccionComponent implements OnInit {
       {
         "nombre": this.nombre,
         "telefono": this.telefono,
-        "msg":  this.msg,
+        "msg": this.msg,
         "email": this.email
       })
       .subscribe(
