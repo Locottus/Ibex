@@ -26,7 +26,7 @@ export class ConstruccionComponent implements OnInit {
       {
         "nombre": this.nombre,
         "telefono": this.telefono,
-        "msg":  this.msg,
+        "msg": this.msg,
         "email": this.email
       })
       .subscribe(
