@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./construccion.component.css']
 })
 export class ConstruccionComponent implements OnInit {
-  //MAILAPI = 'http://18.218.67.86:4000/api/sendMail';
-  MAILAPI = 'http://localhost:3000/mensaje';//dev parameter
+  MAILAPI = 'http://18.218.176.36/api/mensaje';
+  //MAILAPI = 'http://localhost:3000/mensaje';//dev parameter
 
   constructor(private http: HttpClient) { }
 
