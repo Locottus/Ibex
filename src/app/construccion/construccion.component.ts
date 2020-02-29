@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./construccion.component.css']
 })
 export class ConstruccionComponent implements OnInit {
-  MAILAPI = 'http://18.218.176.36/api/mensaje';
-  //MAILAPI = 'http://localhost:3000/mensaje';//dev parameter
+  MAILAPI = 'https://www.ibexcm.com/api/mensaje';
+
 
   constructor(private http: HttpClient) { }
 
@@ -18,7 +18,7 @@ export class ConstruccionComponent implements OnInit {
 
   nombre = '';
   telefono = '';
-  email = '';//dev parameter
+  email = '';
   msg = '';
 
   httpPostFunction() {
