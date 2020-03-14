@@ -41,7 +41,7 @@ body {
 }
 
 .right {
-    float: right;
+    /* float: right; */
     width: 50%;
     /* display : flex; */
     background-color: #FFF;
@@ -209,3 +209,15 @@ p {
 a {
     color: #444;
 }
+
+
+@media screen and (max-width: 769px) {
+    .left { 
+     float: none;
+     margin-right:0;
+     width:auto;
+     border:0;
+     border-bottom:2px solid #000;    
+   }
+}
+
