@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./construccion.component.css']
 })
 export class ConstruccionComponent implements OnInit {
-  MAILAPI = 'https://www.ibexcm.com/api/mensaje';
+  MAILAPI = 'http://18.218.67.86/api/mensaje';
 
 
   constructor(private http: HttpClient) { }
